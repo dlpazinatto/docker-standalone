@@ -71,7 +71,7 @@ services:
       image: mysql:5
       env_file: .env
       environment:
-        TZ: UTC
+        TZ: America/Sao_Paulo
       volumes:
         - ./dbdata:/var/lib/mysql
       ports:
