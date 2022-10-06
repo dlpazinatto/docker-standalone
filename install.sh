@@ -1,10 +1,10 @@
 #!/bin/sh
 
 echo "Cloning Live Helper Chat repository"
-git clone https://github.com/LiveHelperChat/livehelperchat.git
+git clone git@github.com:dlpazinatto/livehelperchat.git
 
 echo "Cloning php-resque repository"
-git clone https://github.com/LiveHelperChat/lhc-php-resque.git
+git clone git@github.com:dlpazinatto/lhc-php-resque.git
 
 echo "Copying resque file to lhc_web"
 cp lhc-php-resque/lhcphpresque/doc/resque.php livehelperchat/lhc_web
