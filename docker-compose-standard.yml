@@ -2,6 +2,7 @@ version: '3'
 
 services:
     web:
+        build: ./Dockerfiles/web
         image: nginx:latest
         env_file: .env
         ports:
