@@ -9,7 +9,7 @@ RUN apt-cache search bcmath
 
 RUN apt update && \
     apt -qy install git unzip zlib1g-dev curl procps libzip-dev libonig-dev libpng-dev libwebp-dev libjpeg62-turbo-dev libxpm-dev libfreetype6-dev && \
-    docker-php-ext-install sockets bcmath pcntl zip mbstring mysqli pdo pdo_mysql && \
+    docker-php-ext-install sockets bcmath pcntl zip mbstring mysqli pdo pdo_mysql iputils-ping net-tools default-mysql-client && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
